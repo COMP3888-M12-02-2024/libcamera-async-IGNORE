@@ -1,5 +1,16 @@
 .. SPDX-License-Identifier: CC-BY-SA-4.0
 
+.. section-begin-preamble
+
+=======================
+IGNORE THIS REPOSITORY
+=======================
+
+**This reposity exists as an intimediary repository for a fork of
+raspberrypi/libcamera. To prevent accidental pull requests into the original
+repo, this repo has been created. Please go to libcamera-async to do all work!**
+
+.. section-end-preamble
 .. section-begin-libcamera
 
 ===========
@@ -31,7 +42,7 @@ Getting Started
 Only build ``libcamera`` from scratch if you need custom behaviour or the latest features that have not yet reached ``apt`` repositories.
 
 If you run ``Raspberry Pi OS Lite``, begin by installing the following packages:
-  
+
 .. code::
 
   sudo apt install -y python-pip git python3-jinja2
@@ -61,7 +72,7 @@ You can disable the ``gstreamer`` plugin by replacing ``-Dgstreamer=enabled`` wi
 If you disable ``gstreamer``, there is no need to install the ``libglib2.0-dev`` and ``libgstreamer-plugins-base1.0-dev`` dependencies.
 
 On devices with 1GB of memory or less, the build may exceed available memory. Append the ``-j 1`` flag to ``ninja`` commands to limit the build to a single process.
-This should prevent the build from exceeding available memory on devices like the Raspberry Pi Zero and the Raspberry Pi 3. 
+This should prevent the build from exceeding available memory on devices like the Raspberry Pi Zero and the Raspberry Pi 3.
 
 ``libcamera`` does not yet have a stable binary interface. Always build ``rpicam-apps`` after you build ``libcamera``.
 
